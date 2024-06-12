@@ -1,0 +1,70 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>
+    .md-header{position:initial}
+    .md-main__inner{margin:0}
+    .md-content{display:none}
+    @media screen and (min-width:60em){.md-sidebar--secondary{display:none}}
+    @media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}
+
+    .mdx-hero__image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mdx-hero__image-container img {
+      display: block;
+      margin: 0 auto;
+    }
+
+
+    .mdx-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      min-width: 70vw;
+      text-align: center;
+    }
+
+    .mdx-hero__content h1, .mdx-hero__content p, .mdx-hero__content a {
+      margin: 0.5em 0;
+    }
+
+    </style>
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <!--<div class="mdx-hero__image">
+        
+          <img src="assets/images/footer_animals.webp" alt="WebP Image" width="1948" height="236">
+          
+        </div>-->
+
+
+        <div class="mdx-hero__content">
+
+          
+          <h1>o(〃'▽'〃)o Hi !</h1>
+          <p>这里是 PeterJeremiah 的个人笔记本哦！</p>
+          <br>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="{{ 'insiders/' | url }}" title="Material for MkDocs Insiders" class="md-button">
+            Get Insiders
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
